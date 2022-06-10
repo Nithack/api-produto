@@ -14,7 +14,6 @@ jobs:
         distribution: 'corretto'
         java-version: '17'
         cache: 'gradle'
-    - run: ./gradlew build --no-daemon
     - name: Make gradlew executable
       run: chmod +x ./gradlew
     - name: Build with Gradle
