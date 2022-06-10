@@ -30,7 +30,7 @@ public class ProdutoController {
         return ResponseEntity.status(HttpStatus.CREATED).body(produtoService.save(produtoModel));
     }
 
-    // get all produtos
+    // pega todos os produtos
     @GetMapping(value = "/")
     public ResponseEntity<Object> getAllProdutos(){
         return ResponseEntity.status(HttpStatus.OK).body(produtoService.getAllProdutos());
